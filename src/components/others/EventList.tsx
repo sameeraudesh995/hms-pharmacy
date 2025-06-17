@@ -1,4 +1,4 @@
-import EventCard from './EventCard';
+import EventCard from './EventCard.tsx';
 
 const events = new Array(8).fill({
     title: 'Meditation',

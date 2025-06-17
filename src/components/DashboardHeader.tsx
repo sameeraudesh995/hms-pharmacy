@@ -1,11 +1,13 @@
-export default function DashboardHeader() {
+// @ts-expect-error
+export default function DashboardHeader({title, description}) {
+
     return (
         <div className="flex items-center justify-between w-full px-1 py-1">
             {/* Left: Greeting */}
             <div>
-                <h1 className="text-[20px] font-semibold ">Morning Hasika!</h1>
+                <h1 className="text-[20px] font-semibold ">{title}</h1>
                 <h3 className="text-sm text-gray-500">
-                    Here’s what’s happening with you Front Desk today.
+                    {description}
                 </h3>
             </div>
 

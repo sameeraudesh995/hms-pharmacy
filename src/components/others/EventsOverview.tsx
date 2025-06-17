@@ -1,4 +1,4 @@
-import EventList from './EventList';
+import EventList from './EventList.tsx';
 
 const EventsOverview = () => {
     return (

@@ -1,6 +1,6 @@
 import DashboardHeader from "../components/DashboardHeader.tsx";
 import StateCard from "../components/StateCard.tsx";
-import InventoryOverview from "../components/InventoryOverview.tsx";
+import InventoryOverviewStatistic from "../components/InventoryOverviewStatistic.tsx";
 import PatientsOverview from "../components/PatientsOverview.tsx";
 import ExpireMedicineChart from "../components/ExpireMedicineChart.tsx";
 
@@ -8,7 +8,7 @@ const Dashboard = () => {
     return (
         <div className="flex flex-col space-y-2">
             {/* Header */}
-            <DashboardHeader />
+            <DashboardHeader title={"Morning Hasika!"} description={"Here’s what’s happening with you store today."} />
 
             {/* Row 1: Stat Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-1">
@@ -20,10 +20,10 @@ const Dashboard = () => {
 
             <div className="flex flex-col lg:flex-row gap-4 p-1 h-full">
                 <div className="flex-1 lg:basis-3/4 border rounded-sm">
-                    <InventoryOverview />
+                    <InventoryOverviewStatistic />
                 </div>
 
-                <div className="flex-1 lg:basis-1/4 overflow-y-auto">
+                <div className="border flex-1 lg:basis-1/4 overflow-y-auto">
                     <ExpireMedicineChart />
                 </div>
             </div>

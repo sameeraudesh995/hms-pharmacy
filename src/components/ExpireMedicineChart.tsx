@@ -20,7 +20,7 @@ const data = [
 
 const ExpireMedicineChart = () => {
     return (
-        <div className="bg-white border  rounded-sm p-4 w-full">
+        <div className="bg-white rounded-sm p-4 w-full">
             <div className="flex justify-between items-center mb-4">
                 <h2 className="text-lg font-semibold">Expire Medicine</h2>
                 <button
